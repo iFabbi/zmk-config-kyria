@@ -30,7 +30,7 @@
             bindings = <
 &kp CAPSLOCK      &kp Q  &kp W  &kp F         &kp P    &kp B                                                   &kp J    &kp L     &kp U      &kp Y    &kp SEMICOLON  &kp BSLH
 &kp LEFT_SHIFT    &kp A  &kp R  &kp S         &kp T    &kp G                                                   &kp M    &kp N     &kp E      &kp I    &kp O          &kp SQT
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp D    &kp V       &kp F2     &kp F9         &mo 1  &kp LSHFT  &kp K    &kp M     &kp COMMA  &kp DOT  &kp FSLH       &kp RCTRL
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp D    &kp V       &kp F2     &kp F9         &mo 1  &kp LSHFT  &kp K    &kp H     &kp COMMA  &kp DOT  &kp FSLH       &kp RCTRL
                                 &kp LEFT_ALT  &kp DEL  &kp ESCAPE  &kp SPACE  &kp BACKSPACE  &mo 2  &kp ENTER  &kp TAB  &kp BSPC  &kp RALT
             >;
         };
@@ -43,7 +43,7 @@
             //                       |      |      |      |      |      |      |      |      |      |      |      |      |
 
             bindings = <
-&trans  &trans  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2                                  &trans  &trans  &kp A   &trans  &trans  &trans
 &trans  &trans  &trans      &bt BT_SEL 3  &bt BT_SEL 4  &trans                                        &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans      &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                             &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
