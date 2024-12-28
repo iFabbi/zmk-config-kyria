@@ -17,6 +17,17 @@
  */
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        Combo_escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <16 15 14>;
+            timeout-ms = <15>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
