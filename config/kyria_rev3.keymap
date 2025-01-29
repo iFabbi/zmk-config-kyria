@@ -26,6 +26,24 @@
             timeout-ms = <15>;
             layers = <0>;
         };
+
+        hold1 {
+            bindings = <&Hold NUMBER_1 0>;
+            key-positions = <1>;
+        };
+    };
+
+    behaviors {
+        Hold: Hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD";
+            bindings = <&kp>, <&trans>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <1 0 1 2 3 4 5 6 7 8 9 10 11>;
+            tapping-term-ms = <50>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
