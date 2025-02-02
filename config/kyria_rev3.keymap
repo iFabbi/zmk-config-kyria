@@ -23,8 +23,8 @@
         Combo_escape {
             bindings = <&kp ESCAPE>;
             key-positions = <16 15 14>;
-            timeout-ms = <15>;
-            layers = <0>;
+            timeout-ms = <150>;
+            layers = <0 2 3 1>;
         };
     };
 
@@ -35,7 +35,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            hold-trigger-key-positions = <1 0 1 2 3 4 5 6 7 8 9 10 11 33 31 30>;
+            hold-trigger-key-positions = <1 0 1 2 3 4 5 6 7 8 9 10 11 33 31 30 18 34>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
@@ -48,7 +48,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <1000>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <32>;
+            hold-trigger-key-positions = <32 44>;
         };
     };
 
@@ -63,10 +63,10 @@
             //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 
             bindings = <
-&Hold GRAVE TAB   &Hold NUMBER_1 Q  &Hold NUMBER_2 W  &Hold NUMBER_3 F  &Hold NUMBER_4 P  &Hold N5 B                                                                      &Hold NUMBER_6 J  &Hold N7 L  &Hold N8 U  &Hold N9 Y  &Hold N0 SEMICOLON  &Hold EQUAL BACKSLASH
-&kp LEFT_SHIFT    &kp A             &kp R             &kp S             &kp T             &kp G                                                                           &kp M             &kp N       &kp E       &kp I       &kp O               &kp SQT
-&kp LEFT_CONTROL  &kp Z             &kp X             &kp C             &kp D             &kp V       &Hold PAGE_UP F2  &Hold PAGE_DOWN F9  &HoldLayer 1 HOME  &kp END    &kp K             &kp H       &kp COMMA   &kp DOT     &kp FSLH            &kp RCTRL
-                                                      &kp LEFT_ALT      &kp LEFT_WIN      &kp DELETE  &kp SPACE         &kp BACKSPACE       &mo 2              &kp ENTER  &kp TAB           &kp BSPC    &kp RALT
+&Hold GRAVE TAB   &Hold NUMBER_1 Q  &Hold NUMBER_2 W  &Hold NUMBER_3 F  &Hold NUMBER_4 P  &Hold N5 B                                                                          &Hold NUMBER_6 J       &Hold N7 L  &Hold N8 U  &Hold N9 Y  &Hold N0 SEMICOLON  &Hold EQUAL BACKSLASH
+&kp LEFT_SHIFT    &kp A             &kp R             &kp S             &kp T             &kp G                                                                               &Hold LEFT_BRACKET M   &kp N       &kp E       &kp I       &kp O               &kp SQT
+&kp LEFT_CONTROL  &kp Z             &kp X             &kp C             &kp D             &kp V       &Hold PAGE_UP F2  &Hold PAGE_DOWN F9      &HoldLayer 1 HOME  &kp END    &Hold RIGHT_BRACKET K  &kp H       &kp COMMA   &kp DOT     &kp FSLH            &kp RCTRL
+                                                      &kp LEFT_ALT      &kp LEFT_WIN      &kp DELETE  &kp SPACE         &HoldLayer 4 BACKSPACE  &mo 2              &kp ENTER  &kp TAB                &kp BSPC    &kp RALT
             >;
         };
 
@@ -102,6 +102,15 @@
 &trans  &kp A  &kp S  &kp D   &kp F   &kp G                                   &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp APOS
 &trans  &kp Z  &kp X  &kp C   &kp V   &kp B   &trans  &trans  &trans  &trans  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
                       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        Navigation {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &kp HOME  &kp UP    &kp END    &kp PG_UP  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans     &trans     &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans
             >;
         };
     };
